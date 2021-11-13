@@ -1,0 +1,43 @@
+Solución que imprima el costo de un pedido de un artículo del cual se tiene la descripción, 
+la cantidad que se requiere y el precio unitario. Si la cantidad pedida esexactamente 10 unidades o 20 unidades, 
+se hace un descuento de 15%; caso contrario se descuenta el 10%
+
+1.  Inicio
+
+2.  valorprecio, d[0,n]
+3.  valorunidades, d[0,n]
+5.  maximoUnidades, i[0,n]
+6.  valorTotal, d[0,n]
+7.  valorTotalD, d[0,n]
+8.  valorTotalD2, d[0,n]
+9.  descuento, d[0,n]
+10.  descuento2,d[0,n]
+11.  porcentaje, d[0,n]
+12.  porcentaje2, d[0,n]
+13.  nombreproducto, x(50)[(a-z),(A+Z),(BD)]
+
+9.  porcentaje  <-- 15
+10. porcentaje2 <--10
+
+10. Escribir " Ingrese nombre del articulo"
+11. Lea nombreproducto
+10.  Escribir "Ingrese el valor del precio"
+11.  Lea valorprecio
+12.  Escribir "Ingrese el numero de Unidades"
+13.  Lea valorunidades
+18.  valorTotal <-- valorprecio * valorunidades
+
+19.  Si valorunidades == 10 OR valorunidades == 20 entonces
+      // vt  ----  100%
+      // x   ----  15%
+
+20.   descuento <-- (porcentaje * valorTotal)/100
+21.   valorTotal <-- valorTotal - porcentaje // vtD <-- 100 - 15 = 85 %
+23.   Fin si
+
+24.   De lo contrario 
+26.   descuento2 <-- (porcentaje2 * valorTotal)/100
+21.   valorTotal <-- valorTotal - porcentaje2 // vtD2 <-- 100 - 10 = 85 %
+
+22.   Escribir "El valor total a pagar es: " + valorTotalD
+26. Fin
